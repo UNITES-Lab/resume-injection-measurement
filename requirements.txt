@@ -1,0 +1,5 @@
+numpy>=1.23
+openai>=1.0
+pdf2image>=1.16
+Pillow>=9.0
+PyMuPDF>=1.23

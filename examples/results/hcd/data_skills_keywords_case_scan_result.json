@@ -1,0 +1,44 @@
+{
+  "label": 1,
+  "label_explanation": "hidden_text_injection",
+  "summary": "Hidden content detected.",
+  "detections": [
+    {
+      "excerpt": "Customer Retention AdTech Digital Marketing API Product Management Salesforce HubSpot Business Intelligence Contract Negotiation B2B Sales Customer Success Metrics Outlook Artificial Intelligence Change Management Growth Strategy Operational Metrics Slack",
+      "explanation": "Hidden content detected via tiny_font"
+    }
+  ],
+  "positions": [
+    {
+      "excerpt": "Customer Retention AdTech Digital Marketing API Product Management Salesforce HubSpot Business Intelligence Contract Negotiation B2B Sales Customer Success Metrics Outlook Artificial Intelligence Change Management Growth Strategy Operational Metrics Slack",
+      "page": 1,
+      "bbox": [
+        72.0,
+        739.8499755859375,
+        154.4779815673828,
+        752.5980224609375
+      ],
+      "explanation": "Hidden content detected via tiny_font",
+      "debug": "Methods: tiny_font | size=2.0pt"
+    }
+  ],
+  "stats": {
+    "scan_method": "fitz_rule_based_v5_padding_aware",
+    "total_detections": 1
+  },
+  "timing_stats": {
+    "text_extraction_ms": 2.48,
+    "pixmap_rendering_ms": 10.67,
+    "region_stats_calculation_ms": 3.74,
+    "method1_tiny_font_ms": 0.02,
+    "method2_solid_color_ms": 0.01,
+    "method3_same_color_ms": 5.25,
+    "method4_phantom_ink_ms": 0.0,
+    "merge_detections_ms": 0.04,
+    "mark_pdf_ms": 9.08,
+    "analysis_total_ms": 22.88,
+    "overall_total_ms": 39.55,
+    "total_pages": 1,
+    "total_spans_processed": 14
+  }
+}

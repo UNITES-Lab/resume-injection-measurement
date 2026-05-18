@@ -1,0 +1,53 @@
+{
+  "label": 1,
+  "label_explanation": "hidden_text_injection",
+  "summary": "Extra keyword-stuffed skill lines appear only in extracted text, not visible in the PDF image, indicating hidden content to game ATS.",
+  "detections": [
+    {
+      "excerpt": [
+        "Customer Retention AdTech Digital Marketing API Product Management Salesforce HubSpot",
+        "Business Intelligence Contract Negotiation B2B Sales Customer Success Metrics Outlook",
+        "Artificial Intelligence Change Management Growth Strategy Operational Metrics Slack"
+      ],
+      "explanation": "These consecutive keyword blocks appear after the SKILLS section in EXTRACTED_TEXT but are not present anywhere in the PDF_IMAGES; they read as ATS-targeted stuffing rather than visible resume content."
+    }
+  ],
+  "positions": [
+    {
+      "excerpt": "Customer Retention AdTech Digital Marketing API Product Management Salesforce HubSpot",
+      "page": 1,
+      "bbox": [
+        72.0,
+        739.8499755859375,
+        154.4779815673828,
+        742.5980224609375
+      ],
+      "match_confidence": 1.0,
+      "match_method": "exact"
+    },
+    {
+      "excerpt": "Business Intelligence Contract Negotiation B2B Sales Customer Success Metrics Outlook",
+      "page": 1,
+      "bbox": [
+        72.0,
+        744.8499755859375,
+        151.25198364257812,
+        747.5980224609375
+      ],
+      "match_confidence": 1.0,
+      "match_method": "exact"
+    },
+    {
+      "excerpt": "Artificial Intelligence Change Management Growth Strategy Operational Metrics Slack",
+      "page": 1,
+      "bbox": [
+        72.0,
+        749.8499755859375,
+        147.8059844970703,
+        752.5980224609375
+      ],
+      "match_confidence": 1.0,
+      "match_method": "exact"
+    }
+  ]
+}

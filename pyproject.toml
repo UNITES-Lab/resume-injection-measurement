@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resume-injection-measurement"
+version = "0.1.0"
+description = "Detection and analysis tools for hidden prompt injection in resume PDFs"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [
+  { name = "UNITES Lab" }
+]
+dependencies = [
+  "numpy>=1.23",
+  "openai>=1.0",
+  "pdf2image>=1.16",
+  "Pillow>=9.0",
+  "PyMuPDF>=1.23"
+]
+
+[project.urls]
+Homepage = "https://github.com/UNITES-Lab/resume-injection-measurement"
+Repository = "https://github.com/UNITES-Lab/resume-injection-measurement"
+
+[project.scripts]
+rim-hcd = "resume_injection_measurement.hcd_pipeline:main"
+rim-hcd-rule = "resume_injection_measurement.hcd_rule_analysis:main"
+rim-hcd-verify = "resume_injection_measurement.hcd_llm_verification:main"
+rim-vda = "resume_injection_measurement.vda_detector:main"
+rim-classify-type = "resume_injection_measurement.classify_injection_type:main"
+rim-classify-subtype = "resume_injection_measurement.classify_injection_subtype:main"
+rim-classify-profile = "resume_injection_measurement.classify_profile:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
